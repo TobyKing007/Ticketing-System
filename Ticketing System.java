@@ -1,6 +1,7 @@
 public class Ticketing System{
 
     public static void fundWallet(double amount){
+     
 
     if (amount > 0){
     userWallet += amount;
@@ -16,30 +17,17 @@ public class Ticketing System{
 }
 
 
-  public static void bookTicket(int quantity){
-
-    if (quantity <= 0){
-     System.out.println("Invalid quantitiy");
-    return;
+  public boolean payForTicket(double amount){
+    if (wallet >= amount){
+        wallet -= amount;
+            return true;
+        
+    }
+        else{
+        return false;
 }
-    if (quantity > ticketAvailable){
-     System.out.println("Not enough quantity!");
-       return;
+
     }
     
-   double totalCost = quantity * ticketPrice;
-    if (userWallet < totalCost){
-        System.out.println("Insufficient wallet balance !");
-        return;
-    }
-    userWallet -= totalCost;
-    plannerWallet += totalCost;
-    ticketAvailable -= quantity;
-    System.out.println("Booking successful!");
-    System.out.println("Cost is " + totalCost);
 }
-
-}
-
-
 
