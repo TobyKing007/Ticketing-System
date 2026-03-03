@@ -11,11 +11,6 @@ register();
 
 }
 
-//
-//ArrayList <Interger> register = new Arraylist<>();
-//ArrayList <String> events = new Arraylist<>();
-//ArrayList <Double> host = new Arraylist<>();
-
 
 public static void menu(){
 
@@ -25,10 +20,11 @@ System.out.println("**************************************");
 System.out.println("BOOKNOWNOW TICKET APP MENU");
 System.out.println("**************************************");
 
-//while (true);
-for(int count = 0; count <= 50; count ++){
-System.out.println("Press 1 To Sign in/Register\nPress 2 to Create Events\nPress 3 to Find Event\nPress 4 to generate User ID\nPress 5 for Wallet\nto Press 4 To Exit: ");
+while (true){
+
+System.out.println("Press 1 To Sign in/Register\nPress 2 to Create Events\nPress 3 to Find Event\nPress 4 to generate User ID\nPress 5 for Wallet\nto Press 4 To Exit:\n ");
 int menu = input.nextInt();
+System.out.println();
 
 if(menu == 1){
 register();
@@ -37,7 +33,7 @@ register();
 
 if(menu == 4){
    System.out.print("See you another time 🤗️\n");
-    break;
+    System.exit(0);
 
 
 
@@ -60,9 +56,10 @@ System.out.println("**********************************************************")
 
 
 //while{
-System.out.println("Press 1 To SignUp\nPress 2 For User Sign in\nPress 3 For Host Sign in\nPress 4 To Exit: ");
+System.out.println("Press 1 To SignUp\nPress 2 For User Sign in\nPress 3 For Host Sign in\nPress 4 To Exit:\n ");
 int details = input.nextInt();
 input.nextLine();
+System.out.println();
 
 
 if(details == 1){
@@ -72,8 +69,9 @@ if(details == 1){
     System.out.println("************************");
 
 
-    System.out.println("Are you a User or Host?: ");
+    System.out.println("Are you a User or Host?:\n ");
     String userHost = input.nextLine();
+    System.out.println();
 
 
     if(userHost.equalsIgnoreCase("User")){
@@ -126,27 +124,32 @@ if(details == 1){
     System.out.println("Register below");
     System.out.println("**********************");
     
-    System.out.println("Enter Company name");
+    System.out.println("Enter Company name: ");
     String nameOfEvent = input.nextLine();
+    System.out.println();
 
-    System.out.println("Enter Company Location ");
+    System.out.println("Enter Company Location: ");
     String eventLocation = input.nextLine();
+    System.out.println();
 
 
     System.out.println("Enter Company Email Address: ");
     String emailAddress = input.nextLine();
+    System.out.println();
 
     System.out.println("Create Password: ");
     String eventPassword = input.nextLine();
+    System.out.println();
 
     System.out.println("Create companyCode: ");
     int companyCode = input.nextInt();
-    
+    System.out.println();  
 
     
 
-    System.out.println("Press 1 to save  or Press 0 to go back Menu");
+    System.out.println("Press 1 to save  or Press 0 to go back Menu\n");
     int save = input.nextInt();
+    System.out.println();
 
     if(save == 0){
 //    break;
@@ -157,6 +160,7 @@ if(details == 1){
     if(save == 1){
     System.out.println(">>>>> >>> >>> Saving");
     System.out.println("Saved");
+    System.out.println();
 
 
 }
@@ -233,7 +237,6 @@ if(details == 1){
 
 
 }
-
 
 
 
