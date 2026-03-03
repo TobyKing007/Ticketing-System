@@ -1,13 +1,11 @@
 import java.util.Scanner;
-public class SignUp{
+public class TicketApp{
  static Scanner input = new Scanner(System.in);
 
 public static void main(String[] args){
 
 menu();
 register();
-
-
 
 }
 
